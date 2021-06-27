@@ -31,7 +31,7 @@ int main(void)
 
 
 
-/*
+/*  子函数修改主函数
 void f(int* pArr, int len)
 {
 	pArr[3] = 88;   //37行
@@ -54,6 +54,7 @@ int main(void)
 void f(int* pArr, int len)
 {
 	int i;
+	pArr[3] = 15;
 	for (i = 0; i < len; ++i)
 		printf("%d ", pArr[i]);//pArr[i]等价于*(pArr + i)  也等价与b[i]也等价与*(b+i)
 	printf("\n");
